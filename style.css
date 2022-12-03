@@ -1,0 +1,17 @@
+#headerBar{
+    display:flex;
+    }
+#headerBar h1{
+    position: relative;
+    padding-right: 40px;
+    
+}
+
+.nav{
+    display:flex;
+    margin-left: auto;
+    margin-right: 20px;
+}
+.nav h2{
+padding:30px;
+}
