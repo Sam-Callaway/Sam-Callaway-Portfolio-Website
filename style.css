@@ -1,9 +1,13 @@
+
+.body{
+    font-family:monospace 
+}
+
 #headerBar{
     display:flex;
-    }
+        }
 #headerBar h1{
-    position: relative;
-    padding-right: 40px;
+     padding: 30px;
     
 }
 
@@ -11,7 +15,27 @@
     display:flex;
     margin-left: auto;
     margin-right: 20px;
-}
+    justify-content: center;
+    align-items: flex-end;
+        }
 .nav h2{
-padding:30px;
+    padding:30px;
+}
+
+#aboutMe{
+     padding: 30px;   
+     display:flex;
+}
+#aboutMe h2{
+    border-right:darkblue solid 2px;
+    padding-right: 20px;
+    }
+#aboutMe p{
+    margin-left: 20px;   
+}
+#projectsHeader{
+    padding: 30px; 
+}
+#projectsHeader h2{
+    border-bottom:darkblue solid 2px;
 }
