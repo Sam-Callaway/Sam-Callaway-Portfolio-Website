@@ -5,6 +5,7 @@
 
 #headerBar{
     display:flex;
+    position:sticky;
         }
 #headerBar h1{
      padding: 30px;
@@ -17,7 +18,7 @@
     margin-right: 20px;
     justify-content: center;
     align-items: flex-end;
-        }
+}
 .nav h2{
     padding:30px;
 }
@@ -29,13 +30,52 @@
 #aboutMe h2{
     border-right:darkblue solid 2px;
     padding-right: 20px;
-    }
+}
 #aboutMe p{
     margin-left: 20px;   
 }
 #projectsHeader{
-    padding: 30px; 
+    padding-left: 30px; 
 }
 #projectsHeader h2{
     border-bottom:darkblue solid 2px;
+}
+#projectsGrid{
+    margin-left: 30px;
+    margin-top:5px;
+    display:grid;
+    height:700px;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "uxdesign uxdesign placeholder2"
+    "myportfolio horiseon horiseon"
+    "myportfolio placeholder1 placeholder1";
+}
+.project{
+    border:solid darkblue 2px;
+
+}
+.project h3{
+    background-color: darkblue;
+    color:white;
+    margin-top:0px;
+    border:solid darkblue 2px;
+}
+#UXDesign{
+    grid-area: uxdesign;
+}
+#HoriseonCodeRefactor{
+    grid-area:horiseon;
+}
+#MyPortfolio{
+    grid-area:myportfolio;
+    background-image: url(/assets/CodeSnippet.jpg);
+    background-repeat: no-repeat;    
+}
+#placeholder1{
+    grid-area:placeholder1;
+}
+#placeholder2{
+    grid-area:placeholder2;
 }
