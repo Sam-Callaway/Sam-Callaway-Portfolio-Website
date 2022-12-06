@@ -29,6 +29,7 @@
 }
 #textSection{
   display:flex;
+  width:60%;
 }
 #textSection h2{
     border-right:darkblue solid 2px;
@@ -39,8 +40,8 @@
     margin-right: 40px; 
 }
 #profilePicture{
-    width:600px; 
-    background-position: right;
+    width:40%; 
+    background-position: top;
     margin-right: 0px;
     height:400px; 
     background-image: url(/assets/ProfilePic.JPG);
@@ -134,5 +135,72 @@
     background-size: cover;
     background-repeat: no-repeat;
     grid-area:img3;
+
+}
+@media only screen and (max-width: 600px){
+
+    #aboutMe{
+        padding: 30px;   
+        display:flex;
+        justify-content: space-between;
+        flex-direction:column;
+        padding-bottom: 10px;
+    }
+    .nav{
+        display:none;}
+
+    #textSection{
+        display:flex;
+        flex-direction:column;
+        width:100%
+    }
+    #textSection h2{
+        border-bottom:darkblue solid 2px;
+        border-right: 0px;
+        padding-right: 20px;
+    }
+    #textSection p{
+        margin-left: 0px;
+        margin-right: 0px; 
+    }
+    #profilePicture{
+        width:100%; 
+        background-position: top;
+        height:400px; 
+        background-image: url(/assets/ProfilePic.JPG);
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+    #UXimg1{
+    display:none;    
+    }
+
+    #UXimg3{
+    display:none;
+    }
+    #UXImgGrid{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "img2";
+        height:100%;
+        margin-top:0px;
+        padding:0px;
+    }
+    #projectsGrid{
+        margin-left: 30px;
+        margin-top: 5px;
+        display:grid;
+        height:700px;
+        padding:0px;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "uxdesign"
+        "myportfolio"
+        "horiseon"
+        "placeholder1"
+        "placeholder2";
+    }
+
 
 }
