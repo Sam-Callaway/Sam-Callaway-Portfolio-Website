@@ -5,8 +5,7 @@
 
 #headerBar{
     display:flex;
-    position:sticky;
-        }
+}
 #headerBar h1{
      padding: 30px;
     
@@ -26,13 +25,28 @@
 #aboutMe{
      padding: 30px;   
      display:flex;
+     justify-content: space-between;
 }
-#aboutMe h2{
+#textSection{
+  display:flex;
+}
+#textSection h2{
     border-right:darkblue solid 2px;
     padding-right: 20px;
 }
-#aboutMe p{
-    margin-left: 20px;   
+#textSection p{
+    margin-left: 20px;
+    margin-right: 40px; 
+}
+#profilePicture{
+    width:600px; 
+    background-position: right;
+    margin-right: 0px;
+
+    height:400px; 
+    background-image: url(/assets/ProfilePic.JPG);
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 #projectsHeader{
     padding-left: 30px; 
@@ -93,9 +107,11 @@
 }
 #placeholder1{
     grid-area:placeholder1;
+    background-color:lightgreen;
 }
 #placeholder2{
     grid-area:placeholder2;
+    background-color:lightgreen;
 }
 #placeholder1 h3{
     margin-top:0px;
