@@ -67,11 +67,14 @@
     "myportfolio horiseon horiseon"
     "myportfolio placeholder1 placeholder1";
 }
+a:hover{
+    opacity: 0.8;
+}
 .project{
     border:solid darkblue 2px;
     background-repeat: no-repeat;
     padding:0px; 
-
+    cursor: pointer;
 }
 .project h3{
     background-color: darkblue;
