@@ -2,6 +2,10 @@
 .body{
     font-family:monospace 
 }
+a {
+    all: unset; 
+    cursor:pointer;
+}
 
 #headerBar{
     display:flex;
@@ -70,21 +74,20 @@
 a:hover{
     opacity: 0.8;
 }
-a {
-    all: unset;
-    cursor:pointer;
-}
+
 .project{
     border:solid darkblue 2px;
     background-repeat: no-repeat;
     padding:0px; 
+    margin: 0px;
     cursor: pointer;
 }
 .project h3{
     background-color: darkblue;
     color:white;
-    margin:0%;
+    margin: -1px;
 }
+
 #UXDesign{
     grid-area: uxdesign;
 }
@@ -119,9 +122,6 @@ a {
 #placeholder2{
     grid-area:placeholder2;
     background-color:lightgreen;
-}
-#placeholder1 h3{
-    margin-top:0px;
 }
 #UXimg1{
     background-image: url(/assets/UXImg1.jpg);
@@ -161,6 +161,9 @@ a {
 #CVheader h2{
     margin:0px;
     margin-right: 20px;
+}
+#CV{
+    margin-left:30px;
 }
 
 
@@ -228,6 +231,8 @@ a {
         "placeholder1"
         "placeholder2";
     }
-
+    #experience{
+        display:none;
+    }
 
 }
