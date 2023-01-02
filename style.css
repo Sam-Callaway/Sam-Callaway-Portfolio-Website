@@ -198,7 +198,8 @@ a:hover{
 @media only screen and (max-width: 600px){
 
     #aboutMe{
-        padding: 30px;   
+        padding: 30px;
+        padding-top: 0px;   
         display:flex;
         justify-content: space-between;
         flex-direction:column;
