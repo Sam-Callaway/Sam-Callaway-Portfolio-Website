@@ -47,7 +47,8 @@ a {
     width:40%; 
     background-position: top;
     margin-right: 0px;
-    height:400px; 
+    height: 0;
+    padding-top: 26.62%;
     background-image: url(/assets/ProfilePic.JPG);
     background-size:contain;
     background-repeat: no-repeat;
@@ -189,6 +190,9 @@ a:hover{
     margin-left: 5px;
     margin-right: 5px;
 }
+#contact img{
+    height:20px;
+}
 
 
 @media only screen and (max-width: 600px){
@@ -199,6 +203,15 @@ a:hover{
         justify-content: space-between;
         flex-direction:column;
         padding-bottom: 10px;
+    }
+    #profilePicture{
+        width:100%; 
+        height: 0;
+        padding-top: 66.56%;
+        background-position: center; 
+        background-image: url(/assets/ProfilePic.JPG);
+        background-size:contain;
+        background-repeat: no-repeat;
     }
     .nav{
         display:none;}
@@ -217,14 +230,7 @@ a:hover{
         margin-left: 0px;
         margin-right: 0px; 
     }
-    #profilePicture{
-        width:100%; 
-        background-position: top;
-        height:400px; 
-        background-image: url(/assets/ProfilePic.JPG);
-        background-size:contain;
-        background-repeat: no-repeat;
-    }
+
     #UXimg1{
     display:none;    
     }
@@ -269,6 +275,8 @@ a:hover{
         padding: 5px;
         margin-left: 0px;
         padding-left: 0px;
-        max-width: min-content;        
+        max-width: min-content;
+                
     }
+
 }
