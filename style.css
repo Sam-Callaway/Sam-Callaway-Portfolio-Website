@@ -1,0 +1,283 @@
+
+.body{
+    font-family:monospace 
+}
+a {
+    all: unset; 
+    cursor:pointer;
+}
+
+#headerBar{
+    display:flex;
+}
+#headerBar h1{
+     padding: 30px;
+    
+}
+
+.nav{
+    display:flex;
+    margin-left: auto;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: flex-end;
+}
+.nav h2{
+    padding:30px;
+}
+
+#aboutMe{
+     padding: 30px;   
+     display:flex;
+     justify-content: space-between;
+}
+#textSection{
+  display:flex;
+  width:60%;
+}
+#textSection h2{
+    border-right:darkblue solid 2px;
+    padding-right: 20px;
+}
+#textSection p{
+    margin-left: 20px;
+    margin-right: 40px; 
+}
+#profilePicture{
+    width:40%; 
+    background-position: top;
+    margin-right: 0px;
+    height: 0;
+    padding-top: 26.62%;
+    background-image: url(/assets/ProfilePic.JPG);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#projectsHeader{
+    padding-left: 30px; 
+}
+#projectsHeader h2{
+    border-bottom:darkblue solid 2px;
+}
+#projectsGrid{
+    margin-left: 30px;
+    margin-top: 5px;
+    display:grid;
+    height:702px;
+    padding:0px;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "uxdesign uxdesign placeholder2"
+    "myportfolio horiseon horiseon"
+    "myportfolio placeholder1 placeholder1";
+}
+a:hover{
+    opacity: 0.8;
+}
+
+.project{
+    border:solid darkblue 2px;
+    background-repeat: no-repeat;
+    padding:0px; 
+    margin: 0px;
+    cursor: pointer;
+}
+.project h3{
+    background-color: darkblue;
+    color:white;
+    margin: -1px;
+}
+
+#UXDesign{
+    grid-area: uxdesign;
+}
+#UXImgGrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "img1 img2 img3";
+    height: 234px;
+    margin-top:0px;
+    padding:0px;
+}
+
+
+#HoriseonCodeRefactor{
+    grid-area:horiseon;
+    background-image: url(/assets/Horiseon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+
+}
+#MyPortfolio{
+    grid-area:myportfolio;
+    background-image: url(/assets/CodeSnippet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+ 
+}
+#placeholder1{
+    grid-area:placeholder1;
+    background-color:lightgreen;
+}
+#placeholder2{
+    grid-area:placeholder2;
+    background-color:lightgreen;
+}
+#UXimg1{
+    background-image: url(/assets/UXImg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area:img1;
+
+}
+#UXimg2{
+    background-image: url(/assets/UXImg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area:img2;
+
+}
+#UXimg3{
+    background-image: url(/assets/UXImg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area:img3;
+
+}
+.CVContactHeaders{
+    margin-top: 30px;
+    margin-left: 30px;   
+    display:flex;
+    border-bottom:darkblue solid 2px;
+    padding-bottom: 0px;
+    justify-content: left;
+}
+.CVContactHeaders a:hover{opacity:1}
+.CVContactHeaders a{
+    display:flex;
+    align-items: center;
+    cursor:pointer;
+}
+#CVheader a{
+    padding-right:50px;
+}
+.CVContactHeaders h2{
+    margin:0px;
+    margin-right: 20px;
+}
+#CV{
+    margin-left:30px;
+}
+#experiencealt{
+    display:none;
+}
+#contact{
+    margin-top: 30px;
+    margin-left: 30px;   
+    display:flex;
+    border-bottom:darkblue solid 2px;
+    padding-bottom: 0px;
+
+}
+#contact h2{
+    margin:0px;
+    margin-right: 20px;
+}
+#contact a{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#contact img{
+    height:20px;
+}
+
+
+@media only screen and (max-width: 600px){
+
+    #aboutMe{
+        padding: 30px;
+        padding-top: 0px;   
+        display:flex;
+        justify-content: space-between;
+        flex-direction:column;
+        padding-bottom: 10px;
+    }
+    #profilePicture{
+        width:100%; 
+        height: 0;
+        padding-top: 66.56%;
+        background-position: center; 
+        background-image: url(/assets/ProfilePic.JPG);
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+    .nav{
+        display:none;}
+
+    #textSection{
+        display:flex;
+        flex-direction:column;
+        width:100%
+    }
+    #textSection h2{
+        border-bottom:darkblue solid 2px;
+        border-right: 0px;
+        padding-right: 20px;
+    }
+    #textSection p{
+        margin-left: 0px;
+        margin-right: 0px; 
+    }
+
+    #UXimg1{
+    display:none;    
+    }
+
+    #UXimg3{
+    display:none;
+    }
+    #UXImgGrid{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "img2";
+        height:140px;
+        margin-top:0px;
+        padding:0px;
+    }
+    #projectsGrid{
+        margin-left: 30px;
+        margin-top: 5px;
+        display:grid;
+        height:700px;
+        padding:0px;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "uxdesign"
+        "myportfolio"
+        "horiseon"
+        "placeholder1"
+        "placeholder2";
+    }
+    #experience{
+        display:none;
+    }
+    #experiencealt{
+        display:block;
+    }
+    #contact{
+        flex-direction: column;
+        border-bottom: none;
+    }
+    #contact a{
+        padding: 5px;
+        margin-left: 0px;
+        padding-left: 0px;
+        max-width: min-content;
+                
+    }
+
+}
