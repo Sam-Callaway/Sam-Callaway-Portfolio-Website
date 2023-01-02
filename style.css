@@ -144,26 +144,50 @@ a:hover{
     grid-area:img3;
 
 }
-#CVheader{
+.CVContactHeaders{
     margin-top: 30px;
     margin-left: 30px;   
     display:flex;
     border-bottom:darkblue solid 2px;
     padding-bottom: 0px;
+    justify-content: left;
 }
-#CVheader a:hover{opacity:1}
-#CVheader a{
+.CVContactHeaders a:hover{opacity:1}
+.CVContactHeaders a{
     display:flex;
     align-items: center;
-    padding-right:50px;
     cursor:pointer;
 }
-#CVheader h2{
+#CVheader a{
+    padding-right:50px;
+}
+.CVContactHeaders h2{
     margin:0px;
     margin-right: 20px;
 }
 #CV{
     margin-left:30px;
+}
+#experiencealt{
+    display:none;
+}
+#contact{
+    margin-top: 30px;
+    margin-left: 30px;   
+    display:flex;
+    border-bottom:darkblue solid 2px;
+    padding-bottom: 0px;
+
+}
+#contact h2{
+    margin:0px;
+    margin-right: 20px;
+}
+#contact a{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 
@@ -234,5 +258,17 @@ a:hover{
     #experience{
         display:none;
     }
-
+    #experiencealt{
+        display:block;
+    }
+    #contact{
+        flex-direction: column;
+        border-bottom: none;
+    }
+    #contact a{
+        padding: 5px;
+        margin-left: 0px;
+        padding-left: 0px;
+        max-width: min-content;        
+    }
 }
