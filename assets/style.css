@@ -2,6 +2,7 @@
 .body{
     font-family:monospace 
 }
+/* Removing link styling so they aren't underlines or coloured etc */
 a {
     all: unset; 
     cursor:pointer;
@@ -14,7 +15,7 @@ a {
      padding: 30px;
     
 }
-
+/* Nav section should align to end of div so it is on right of page */
 .nav{
     display:flex;
     margin-left: auto;
@@ -26,6 +27,7 @@ a {
     padding:30px;
 }
 
+/* I'm maintaining a 30px padding gap around most sections but especially to the left so everything on the page looks neat*/
 #aboutMe{
      padding: 30px;   
      display:flex;
@@ -43,6 +45,7 @@ a {
     margin-left: 20px;
     margin-right: 40px; 
 }
+/* padding-top percentage is this in order to scale the div to the size of the image while maintaining image ratio */
 #profilePicture{
     width:40%; 
     background-position: top;
@@ -59,6 +62,7 @@ a {
 #projectsHeader h2{
     border-bottom:darkblue solid 2px;
 }
+/* height is 702 so it is divisible by 3. This is important as I define the height of the UX grid exactly below. */
 #projectsGrid{
     margin-left: 30px;
     margin-top: 5px;
@@ -92,6 +96,7 @@ a:hover{
 #UXDesign{
     grid-area: uxdesign;
 }
+/* 702/3 = 234px height. I'm defining the height like this so the background images show correctly*/
 #UXImgGrid{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -159,6 +164,7 @@ a:hover{
     align-items: center;
     cursor:pointer;
 }
+/* put a little padding here to make the download icon easier to click */
 #CVheader a{
     padding-right:50px;
 }
@@ -194,7 +200,7 @@ a:hover{
     height:20px;
 }
 
-
+/* down to around 600px everything scales fine but below that it starts to look odd so switch to media query */
 @media only screen and (max-width: 600px){
 
     #aboutMe{
@@ -205,6 +211,7 @@ a:hover{
         flex-direction:column;
         padding-bottom: 10px;
     }
+    /* need to change the padding on profile picture as it's now 100% of width not 40% */
     #profilePicture{
         width:100%; 
         height: 0;
@@ -216,7 +223,7 @@ a:hover{
     }
     .nav{
         display:none;}
-
+    /* switching text section in about me to vertical alignment */
     #textSection{
         display:flex;
         flex-direction:column;
@@ -239,6 +246,7 @@ a:hover{
     #UXimg3{
     display:none;
     }
+    /* 700/5 = 140px height */
     #UXImgGrid{
         display:grid;
         grid-template-columns: 1fr;
@@ -247,6 +255,7 @@ a:hover{
         margin-top:0px;
         padding:0px;
     }
+    /* switch the grid to a vertical alignment */
     #projectsGrid{
         margin-left: 30px;
         margin-top: 5px;
@@ -262,12 +271,14 @@ a:hover{
         "placeholder1"
         "placeholder2";
     }
+    /* removing the experience div and replacing with experience alt */
     #experience{
         display:none;
     }
     #experiencealt{
         display:block;
     }
+    /* switching the contact links to vertical alignment */
     #contact{
         flex-direction: column;
         border-bottom: none;
